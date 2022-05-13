@@ -3,6 +3,7 @@ html(lang="ko")
     head 
         title #{pageTitle} | tube
         link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="/static/css/styles.css")
     body
         header
             img(src="https://img.onnada.com/2022/0417/1925729510_99105209_02.gif")
@@ -13,9 +14,13 @@ html(lang="ko")
                         a(href="/") Home
                     if loggedIn 
                         li 
-                            a(href="/logout") Log Out
+                            a(href="/videos/upload") Upload Video
                         li 
-                            a(href="my-profile") #{loggedInUser.name}
+                            a(href=`/users/${loggedInUser._id}`) My Profile
+                        li 
+                            a(href="/users/edit") Edit Profile
+                        li 
+                            a(href="/users/logout") Log Out
                     else
                         li 
                             a(href="/join") Join
@@ -23,8 +28,7 @@ html(lang="ko")
                             a(href="/login") Login
                     li 
                         a(href="/search") Search
-                    li 
-                        a(href="/videos/upload") Upload Video
         main
             block content
     include partials/footer
+    script(src="/static/js/main.js")
