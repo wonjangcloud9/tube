@@ -7,8 +7,8 @@
     "url": "git+https://github.com/wonjangcloud9/tube.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node src/init.js",
-    "assets": "rimraf assets && webpack --config webpack.config.js"
+    "dev:server": "nodemon",
+    "assets:assets": "webpack"
   },
   "author": "",
   "license": "MIT",
