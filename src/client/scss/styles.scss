@@ -8,6 +8,7 @@
 @import "./components/shared.scss";
 @import "./components/forms.scss";
 @import "./components/social-login.scss";
+@import "./components/video-player.scss";
 // Screens
 
 @import "./screens/search.scss";
@@ -30,4 +31,9 @@ main {
   width: 100%;
   margin: 0 auto;
   margin-top: 50px;
+}
+
+.anya {
+  text-align: center;
+  margin-bottom: 20px;
 }

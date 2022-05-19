@@ -2,7 +2,8 @@ extends base
 include mixins/video
 
 block content
-    img(src="https://img.onnada.com/2022/0417/1925729510_99105209_02.gif")
+    div.anya
+        img(src="https://img.onnada.com/2022/0417/1925729510_99105209_02.gif")
     div.video-grid
         each video in videos
             +video(video)
