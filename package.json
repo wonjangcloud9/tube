@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev:server": "nodemon",
-    "assets:assets": "webpack"
+    "assets:server": "webpack"
   },
   "author": "",
   "license": "MIT",
